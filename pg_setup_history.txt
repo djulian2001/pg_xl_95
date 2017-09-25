@@ -1,0 +1,69 @@
+sudo groupadd postgres
+sudo useradd -u 997 --password vagrant --create-home -g postgres postgres
+cat /etc/group
+sudo useradd --help
+export PGUSER_PW="pgrocks"
+echo "postgres:$PGUSER_PW"
+echo "postgres:$PGUSER_PW" | chpasswd
+echo "postgres:$PGUSER_PW" | sudo chpasswd
+su - postgres
+export PGUSER_PW=""
+env
+cat /vagrant/pg_configs.conf | sudo -i -u postgres tee -a .bash_profile 1> /dev/null
+env
+cat /vagrant/pg_configs.conf
+cat /vagrant/pg_configs.conf | sudo -i -u postgres tee -a .bash_profile
+env
+cat /vagrant/pg_configs.conf | sudo -i -u postgres tee -a .bash_profile
+env
+su - postgres
+whoami
+history
+ssh-keygen --help
+sudo mkdir /home/postgres/.ssh
+chown postgres:postgres /home/postgres/.ssh/
+sudo chown postgres:postgres /home/postgres/.ssh/
+sudo chmod 700 /home/postgres/.ssh
+ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh -q -N ""
+sudo ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh -q -N ""
+sudo ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh/ -q -N ""
+rm --help
+rm -d /home/postgres/.ssh
+rm -df /home/postgres/.ssh
+sudo rm -df /home/postgres/.ssh
+sudo ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh/ -q -N ""
+ssh-keygen --help
+sudo ssh-keygen -b 2048 -t rsa -f /vagrant/ -q -N ""
+sudo ssh-keygen -b 2048 -t rsa -f /vagrant/ssh -q -N ""
+cat .ssh/authorized_keys 
+ssh-keygen --help
+info ssh-keygen
+man ssh-keygen
+cat .ssh/authorized_keys 
+cat .ssh/
+su - postgres
+ls
+ssh-keygen -t rsa
+rm .ssh/id_*
+sudo ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh/id_rsa -q -N "" -C postgres
+sudo mkdir /home/postgres/.ssh
+sudo ssh-keygen -b 2048 -t rsa -f /home/postgres/.ssh/id_rsa -q -N "" -C postgres
+sudo chown postgres:postgres -R /home/postgres/.ssh
+sudo chmod 700 -R /home/postgres/.ssh
+sudo cat /home/postgres/.ssh/id_rsa.pub
+hostname
+env
+ifconfig
+source /vagrant/pg_configs.conf 
+env
+wget --help
+wget --quiet "http://files.postgres-xl.org/postgres-xl-9.5r1.3.tar.gz" /home/postgres/
+ls
+tar
+sudo apt-get tar
+sudo apt-get install tar
+tar -v
+tar --help
+make --version
+gcc -v
+zlib --help
